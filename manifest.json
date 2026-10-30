@@ -1,0 +1,274 @@
+{
+  "parts": [
+    {
+      "path": "STL/BASE/Electronics_case_v1_1.STL",
+      "name": "Electronics_case_v1_1.STL",
+      "folder": "BASE",
+      "bytes": 6380084
+    },
+    {
+      "path": "STL/BASE/J1_bottom_lid.STL",
+      "name": "J1_bottom_lid.STL",
+      "folder": "BASE",
+      "bytes": 1399684
+    },
+    {
+      "path": "STL/BASE/fan_cover.STL",
+      "name": "fan_cover.STL",
+      "folder": "BASE",
+      "bytes": 4554184
+    },
+    {
+      "path": "STL/BASE/lid_electronics.STL",
+      "name": "lid_electronics.STL",
+      "folder": "BASE",
+      "bytes": 2359284
+    },
+    {
+      "path": "STL/BASE/main_base_blocker.STL",
+      "name": "main_base_blocker.STL",
+      "folder": "BASE",
+      "bytes": 18782684
+    },
+    {
+      "path": "STL/ELBOW/Elbow_lid_1.STL",
+      "name": "Elbow_lid_1.STL",
+      "folder": "ELBOW",
+      "bytes": 9904784
+    },
+    {
+      "path": "STL/ELBOW/Elbow_lid_2.STL",
+      "name": "Elbow_lid_2.STL",
+      "folder": "ELBOW",
+      "bytes": 420484
+    },
+    {
+      "path": "STL/ELBOW/Elbow_part.STL",
+      "name": "Elbow_part.STL",
+      "folder": "ELBOW",
+      "bytes": 7253684
+    },
+    {
+      "path": "STL/ELBOW/J4_bearing_backplate.STL",
+      "name": "J4_bearing_backplate.STL",
+      "folder": "ELBOW",
+      "bytes": 1620084
+    },
+    {
+      "path": "STL/ELBOW/J4_limiter.STL",
+      "name": "J4_limiter.STL",
+      "folder": "ELBOW",
+      "bytes": 172684
+    },
+    {
+      "path": "STL/ESTOP/ESTOP_BOTTOM.STL",
+      "name": "ESTOP_BOTTOM.STL",
+      "folder": "ESTOP",
+      "bytes": 2897684
+    },
+    {
+      "path": "STL/ESTOP/ESTOP_TOP.STL",
+      "name": "ESTOP_TOP.STL",
+      "folder": "ESTOP",
+      "bytes": 1651784
+    },
+    {
+      "path": "STL/FOREARM/HTD3_48_J5_pulley.STL",
+      "name": "HTD3_48_J5_pulley.STL",
+      "folder": "FOREARM",
+      "bytes": 9266184
+    },
+    {
+      "path": "STL/FOREARM/J4_output_pulley.STL",
+      "name": "J4_output_pulley.STL",
+      "folder": "FOREARM",
+      "bytes": 10686884
+    },
+    {
+      "path": "STL/FOREARM/J5_belt_lid.STL",
+      "name": "J5_belt_lid.STL",
+      "folder": "FOREARM",
+      "bytes": 18100584
+    },
+    {
+      "path": "STL/FOREARM/J5_electronics_lid.STL",
+      "name": "J5_electronics_lid.STL",
+      "folder": "FOREARM",
+      "bytes": 1034484
+    },
+    {
+      "path": "STL/FOREARM/J5_part.STL",
+      "name": "J5_part.STL",
+      "folder": "FOREARM",
+      "bytes": 6578084
+    },
+    {
+      "path": "STL/GRIPPER_ATTACHMENTS/Gripper_ARMS.STL",
+      "name": "Gripper_ARMS.STL",
+      "folder": "GRIPPER_ATTACHMENTS",
+      "bytes": 578084
+    },
+    {
+      "path": "STL/GRIPPER_ATTACHMENTS/Horizontal pneumatic gripper/Pneumatic_gripper_holder_custom.stl",
+      "name": "Pneumatic_gripper_holder_custom.stl",
+      "folder": "GRIPPER_ATTACHMENTS",
+      "bytes": 1149584
+    },
+    {
+      "path": "STL/GRIPPER_ATTACHMENTS/Horizontal pneumatic gripper/Pneumatic_gripper_holder_horizontal.stl",
+      "name": "Pneumatic_gripper_holder_horizontal.stl",
+      "folder": "GRIPPER_ATTACHMENTS",
+      "bytes": 1066784
+    },
+    {
+      "path": "STL/GRIPPER_ATTACHMENTS/Pneumatic_gripper_holder.STL",
+      "name": "Pneumatic_gripper_holder.STL",
+      "folder": "GRIPPER_ATTACHMENTS",
+      "bytes": 2564084
+    },
+    {
+      "path": "STL/GRIPPER_ATTACHMENTS/vacuum_gripper_holder.STL",
+      "name": "vacuum_gripper_holder.STL",
+      "folder": "GRIPPER_ATTACHMENTS",
+      "bytes": 2153384
+    },
+    {
+      "path": "STL/SHOULDER/J1_backplate.STL",
+      "name": "J1_backplate.STL",
+      "folder": "SHOULDER",
+      "bytes": 2205584
+    },
+    {
+      "path": "STL/SHOULDER/J1_belt_cover_rework.STL",
+      "name": "J1_belt_cover_rework.STL",
+      "folder": "SHOULDER",
+      "bytes": 2500484
+    },
+    {
+      "path": "STL/SHOULDER/J1_rotation_shaft.STL",
+      "name": "J1_rotation_shaft.STL",
+      "folder": "SHOULDER",
+      "bytes": 1157084
+    },
+    {
+      "path": "STL/SHOULDER/J1_turret_motor_holder.STL",
+      "name": "J1_turret_motor_holder.STL",
+      "folder": "SHOULDER",
+      "bytes": 2661184
+    },
+    {
+      "path": "STL/SHOULDER/J1_turret_rework_blocker.STL",
+      "name": "J1_turret_rework_blocker.STL",
+      "folder": "SHOULDER",
+      "bytes": 10358284
+    },
+    {
+      "path": "STL/SHOULDER/J1_wires_cover_rework.STL",
+      "name": "J1_wires_cover_rework.STL",
+      "folder": "SHOULDER",
+      "bytes": 578284
+    },
+    {
+      "path": "STL/SHOULDER/J2_limit_switch_cover.STL",
+      "name": "J2_limit_switch_cover.STL",
+      "folder": "SHOULDER",
+      "bytes": 640784
+    },
+    {
+      "path": "STL/SHOULDER/J2_stopper_block.STL",
+      "name": "J2_stopper_block.STL",
+      "folder": "SHOULDER",
+      "bytes": 1039684
+    },
+    {
+      "path": "STL/SMALL_PRINT_BED/J1_turret_rework_blocker/J1_turret_rework_blocker_A_turret_end.STL",
+      "name": "J1_turret_rework_blocker_A_turret_end.STL",
+      "folder": "SMALL_PRINT_BED",
+      "bytes": 283984
+    },
+    {
+      "path": "STL/SMALL_PRINT_BED/J1_turret_rework_blocker/J1_turret_rework_blocker_B_arm_end.STL",
+      "name": "J1_turret_rework_blocker_B_arm_end.STL",
+      "folder": "SMALL_PRINT_BED",
+      "bytes": 238384
+    },
+    {
+      "path": "STL/SMALL_PRINT_BED/Upper_arm/Upper_arm_A_long_end.STL",
+      "name": "Upper_arm_A_long_end.STL",
+      "folder": "SMALL_PRINT_BED",
+      "bytes": 343684
+    },
+    {
+      "path": "STL/SMALL_PRINT_BED/Upper_arm/Upper_arm_B_short_end.STL",
+      "name": "Upper_arm_B_short_end.STL",
+      "folder": "SMALL_PRINT_BED",
+      "bytes": 146484
+    },
+    {
+      "path": "STL/UPPER_ARM/38_pulley_J3.STL",
+      "name": "38_pulley_J3.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 8439584
+    },
+    {
+      "path": "STL/UPPER_ARM/42_pulley.STL",
+      "name": "42_pulley.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 5149784
+    },
+    {
+      "path": "STL/UPPER_ARM/J2_bearing_backplate.STL",
+      "name": "J2_bearing_backplate.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 4090184
+    },
+    {
+      "path": "STL/UPPER_ARM/J2_cover.STL",
+      "name": "J2_cover.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 4458184
+    },
+    {
+      "path": "STL/UPPER_ARM/J2_shaft.STL",
+      "name": "J2_shaft.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 2018884
+    },
+    {
+      "path": "STL/UPPER_ARM/J3_limit_switch_cover.STL",
+      "name": "J3_limit_switch_cover.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 1293684
+    },
+    {
+      "path": "STL/UPPER_ARM/Upper_arm.STL",
+      "name": "Upper_arm.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 33867184
+    },
+    {
+      "path": "STL/UPPER_ARM/Upper_arm_cover.STL",
+      "name": "Upper_arm_cover.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 1952984
+    },
+    {
+      "path": "STL/UPPER_ARM/Upper_arm_wires_cover.STL",
+      "name": "Upper_arm_wires_cover.STL",
+      "folder": "UPPER_ARM",
+      "bytes": 1154084
+    },
+    {
+      "path": "STL/UTILITY/connectors_4_alu_profiles.STL",
+      "name": "connectors_4_alu_profiles.STL",
+      "folder": "UTILITY",
+      "bytes": 290284
+    },
+    {
+      "path": "STL/WRIST/wrist.STL",
+      "name": "wrist.STL",
+      "folder": "WRIST",
+      "bytes": 13696584
+    }
+  ]
+}

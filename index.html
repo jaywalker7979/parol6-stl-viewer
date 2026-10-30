@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PAROL6 STL 뷰어</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <aside class="sidebar">
+    <header class="brand">
+      <p class="eyebrow">PAROL6</p>
+      <h1>STL 뷰어</h1>
+      <p class="hint">폴더에서 부품을 고르면 이 저장소의 STL을 바로 보여 줍니다.</p>
+    </header>
+    <label class="search">
+      <span class="sr">부품 검색</span>
+      <input id="query" type="search" placeholder="이름 검색" autocomplete="off">
+    </label>
+    <p id="count" class="count"></p>
+    <nav id="list" class="list" aria-label="STL 목록"></nav>
+  </aside>
+  <main class="stage">
+    <div class="toolbar">
+      <div class="title-block">
+        <h2 id="part-name">부품을 고르세요</h2>
+        <p id="part-meta"></p>
+      </div>
+      <div class="actions">
+        <button id="wire" type="button">와이어프레임</button>
+        <button id="spin" type="button">자동 회전</button>
+        <button id="reset" type="button">시점 초기화</button>
+      </div>
+    </div>
+    <div class="viewport">
+      <canvas id="view"></canvas>
+      <p id="status" class="status" hidden></p>
+      <p id="banner" class="banner" hidden></p>
+    </div>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
