@@ -54,6 +54,7 @@ const material = new THREE.MeshStandardMaterial({
 });
 
 const loader = new STLLoader();
+const UPSTREAM = "https://raw.githubusercontent.com/Source-Robotics/PAROL6-Desktop-robot-arm/main/";
 let mesh = null;
 let home = null;
 let spin = false;
@@ -124,8 +125,10 @@ function showGeometry(geometry) {
   return size;
 }
 
-function fileUrl(path) {
-  return new URL(`../${path}`, window.location.href).href;
+function fileUrls(path) {
+  const local = new URL(`../${path}`, window.location.href).href;
+  const remote = UPSTREAM + path.split("/").map(encodeURIComponent).join("/");
+  return local === remote ? [remote] : [local, remote];
 }
 
 function loadPart(part) {
@@ -137,29 +140,35 @@ function loadPart(part) {
     button.classList.toggle("active", button.dataset.path === part.path);
   });
 
-  loader.load(
-    fileUrl(part.path),
-    (geometry) => {
-      if (token !== loadToken) {
-        geometry.dispose();
-        return;
-      }
-      const size = showGeometry(geometry);
-      metaEl.textContent = `${FOLDER_LABEL[part.folder] || part.folder} · ${formatBytes(part.bytes)} · 가로 ${formatMm(size.x)} · 높이 ${formatMm(size.y)} · 깊이 ${formatMm(size.z)} · 삼각형 ${Math.round(geometry.attributes.position.count / 3).toLocaleString("ko-KR")}`;
-      setStatus("");
-    },
-    (event) => {
-      if (token !== loadToken || !event.lengthComputable) return;
-      const pct = Math.round((event.loaded / event.total) * 100);
-      setStatus(`불러오는 중 ${pct}%`);
-    },
-    () => {
-      if (token !== loadToken) return;
-      setStatus("");
-      bannerEl.hidden = false;
-      bannerEl.textContent = "이 파일을 읽지 못했습니다. 페이지를 저장소 루트에서 서빙하고 있는지 확인해 주세요.";
-    },
-  );
+  const [first, second] = fileUrls(part.path);
+  const onGeometry = (geometry) => {
+    if (token !== loadToken) {
+      geometry.dispose();
+      return;
+    }
+    const size = showGeometry(geometry);
+    metaEl.textContent = `${FOLDER_LABEL[part.folder] || part.folder} · ${formatBytes(part.bytes)} · 가로 ${formatMm(size.x)} · 높이 ${formatMm(size.y)} · 깊이 ${formatMm(size.z)} · 삼각형 ${Math.round(geometry.attributes.position.count / 3).toLocaleString("ko-KR")}`;
+    setStatus("");
+    bannerEl.hidden = true;
+  };
+  const onProgress = (event) => {
+    if (token !== loadToken || !event.lengthComputable) return;
+    const pct = Math.round((event.loaded / event.total) * 100);
+    setStatus(`불러오는 중 ${pct}%`);
+  };
+  const fail = () => {
+    if (token !== loadToken) return;
+    setStatus("");
+    bannerEl.hidden = false;
+    bannerEl.textContent = "이 파일을 읽지 못했습니다.";
+  };
+  loader.load(first, onGeometry, onProgress, () => {
+    if (!second || token !== loadToken) {
+      fail();
+      return;
+    }
+    loader.load(second, onGeometry, onProgress, fail);
+  });
 }
 
 function renderList() {
